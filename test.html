@@ -1,0 +1,54 @@
+<html>
+<head>
+  <link rel="stylesheet" href="qunit-1.9.0.css"/>
+</head>
+  <body>
+    <div style="display:none">
+      <div data-role="thing"></div>
+      <div data-role="controls">
+        <button data-role="play">play</button>
+        <button data-role="pause">pause</button>
+      </div> 
+    </div>
+    <div id="qunit"></div>
+  </body>
+  
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+ <script src="qunit-1.9.0.js"></script>
+ <script src="dataroles.js"></script>
+  <script>
+    var thing = $.findByRole("thing");
+    var thing2 = $("body").findByRole("thing");
+    console.log(thing.role());
+
+    test( "$.findByRole('thing')", function() {
+      ok( $.findByRole("thing").length > 0);
+    });
+
+    var $controls = $.findByRole("controls");
+    test( "$.findByRole('controls')", function() {
+      ok( $controls.length > 0);
+    });
+
+    var $play = $controls.findByRole("play");
+    test( "$controls.findByRole('play')", function() {
+      ok( $play.length > 0);
+    });
+
+    var $controls2 = $play.closestByRole("controls");
+    test( "$play.closestByRole('controls')", function() {
+      ok( $controls.is($controls2));
+    });    
+
+    test( "$play.role()", function() {
+      ok( $play.role() == "play");
+    });    
+
+    test( "$pause.role('changed')", function() {
+      var $pause = $controls.findByRole("pause");
+      $pause.role('changed')
+      ok( $pause.role() == "changed");
+    });    
+  </script>
+</html>
