@@ -30,6 +30,10 @@
   - prevAll
   - prevUntil
   - siblings
+
+  NOTE: these methods wrap preexisting methods so there is a performance hit when using them
+   but you always cache your selected elements anyway, right? ;-)
+
   */
 
   $.findByRole = function (role, $scope) {
