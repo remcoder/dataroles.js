@@ -1,6 +1,9 @@
 # dataroles.js
+_size: 0.5k (minified)_
 
 A little utility to attach behavior to the _data-role_ attribute more easily.
+
+
 
 ## examples 
 
@@ -38,5 +41,5 @@ is equivalent to
 is quivalent to `.is("[data-role='role']")`
 
 ### multiple roles
-multiple roles per data-role attribute are supported (uses the ~= operator internally)
+multiple roles per data-role attribute are supported (uses the `~=` operator internally)
 
