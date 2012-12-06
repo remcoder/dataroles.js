@@ -5,6 +5,15 @@ A little utility to attach behavior to the _data-role_ attribute more easily.
 
 See [this blog post](http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior) for some background information.
 
+## installation
+You can install easily with [yeoman]() or [bower](http://twitter.github.com/bower/):
+
+    yeoman install dataroles.js
+
+or
+
+    bower install dataroles.js
+
 ## examples 
 
 
