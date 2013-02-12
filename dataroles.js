@@ -46,7 +46,7 @@
   };
 
   var methods = ["add", "children", "closest", "filter", "find", "has", "is", "next", "nextAll",
-   "nextAllUntil", "not", "parent", "parents", "parentsUntil", "prev", "prevAll", "prevUntil", "siblings"];
+   "nextUntil", "not", "parent", "parents", "parentsUntil", "prev", "prevAll", "prevUntil", "siblings"];
 
   $.each(methods, function (i, method) {
     $.fn[method + "ByRole"] = function (role) {
