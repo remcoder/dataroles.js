@@ -1,7 +1,7 @@
 # dataroles.js
 _size: 0.5k (minified)_
 
-A little utility to attach behavior to the _data-role_ attribute more easily.
+A little jQuery extension to attach behavior to _data-role_ attributes, instead of classnames.
 
 See [this blog post](http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior) for some background information.
 
