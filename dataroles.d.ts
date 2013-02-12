@@ -1,5 +1,3 @@
-/// <reference path="..\\lib\\jquery.d.ts" />
-
 interface JQuery {
   hasRole(role: string): bool;
 
