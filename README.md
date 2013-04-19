@@ -6,11 +6,7 @@ A little jQuery extension to attach behavior to _data-role_ attributes, instead 
 See [this blog post](http://blog.realstuffforabstractpeople.com/post/31753521367/classnames-for-styling-data-attributes-for-behavior) for some background information.
 
 ## installation
-You can install it easily with [yeoman]() or [bower](http://twitter.github.com/bower/):
-
-    yeoman install dataroles.js
-
-or
+You can install it easily with [bower](http://twitter.github.com/bower/):
 
     bower install dataroles.js
 
